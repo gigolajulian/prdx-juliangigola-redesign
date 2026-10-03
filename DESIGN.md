@@ -256,6 +256,9 @@ The Shop (PRDX Supply) unit, in a 2-column grid (4 at 900px+, gap 28px by gutter
 ### Sticker
 A spot disc with a slowly rotating mono ring of text (24s per turn) around a condensed two-word label; tilted, straightening and growing 4% on hover. Always a link to the action it names (Book, Shop).
 
+### Booker
+Every link to getsquire.com/booking opens a native `<dialog>` instead of a new tab, built by main.js (no markup per page; links stay plain links without JS). It is a paper panel sliding in from the right (min(600px, 100%), full screen on phones) over a 55% ink backdrop: an ink header with the condensed "Book a chair" title and a ringed close, a row of pill shop tabs (the active shop fills spot), Squire's booking flow in an iframe, and a mono footer "Booking by Squire / Open in a new tab". A generic brand link opens a shop chooser first: condensed shop names with addresses, nudging right on hover. Squire's own UI inside the frame cannot be restyled; the frame keeps it on a paper ground.
+
 ### Inputs / Fields
 - **Style:** underline only: transparent ground, 1px ink bottom border, no radius, 1.125rem text, mono uppercase label above, spot caret.
 - **Focus:** the underline turns spot; no outline ring.

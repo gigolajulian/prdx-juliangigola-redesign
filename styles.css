@@ -772,3 +772,49 @@ p { text-wrap: pretty; }
   .js .cover .sticker { scale: 1; }
   .print img { transform: none; }
 }
+
+/* ---------- Booker: Squire inside a /P/ panel ---------- */
+.booker {
+  position: fixed; inset: 0 0 0 auto; margin: 0; padding: 0; border: 0;
+  width: min(600px, 100%); height: 100dvh; max-width: none; max-height: none;
+  background: var(--paper); color: var(--ink);
+  display: none; flex-direction: column;
+  transform: translateX(0); transition: transform 520ms var(--ease-out), overlay 520ms allow-discrete, display 520ms allow-discrete;
+}
+.booker[open] { display: flex; }
+@starting-style { .booker[open] { transform: translateX(100%); } }
+.booker:not([open]) { transform: translateX(100%); transition-timing-function: var(--ease-in-out); }
+.booker::backdrop { background: rgba(14, 14, 14, 0.55); transition: background-color 520ms var(--ease-out), overlay 520ms allow-discrete, display 520ms allow-discrete; }
+@starting-style { .booker[open]::backdrop { background: rgba(14, 14, 14, 0); } }
+.booker__top { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px var(--gutter); background: var(--ink); color: var(--paper); }
+.booker__title { margin: 0; font-family: var(--display); font-variation-settings: "wdth" 62; font-weight: 900; text-transform: uppercase; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 0.9; letter-spacing: -0.01em; }
+.booker__close { flex: none; width: 40px; height: 40px; border-radius: 999px; border: 1px solid var(--paper); background: transparent; color: var(--paper); cursor: pointer; display: grid; place-items: center; transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out); }
+.booker__close:hover { background: var(--paper); color: var(--ink); }
+.booker__close svg { width: 14px; height: 14px; }
+.booker__shops { display: flex; gap: 6px; overflow-x: auto; padding: 12px var(--gutter); border-bottom: 1px solid var(--ink); scrollbar-width: none; }
+.booker__shops button {
+  flex: none; height: 34px; padding: 0 14px; border-radius: 999px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer;
+  font-family: var(--display); font-variation-settings: "wdth" 88; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em;
+  transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out);
+}
+.booker__shops button:hover { background: var(--paper-2); }
+.booker__shops button[aria-pressed="true"] { background: var(--spot); border-color: var(--spot); }
+.booker.is-picking .booker__shops { display: none; }
+.booker__body { position: relative; flex: 1; min-height: 0; }
+.booker__body iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: var(--paper); }
+.booker__wait { position: absolute; inset: 0; display: grid; place-items: center; margin: 0; font-family: var(--mono); font-size: 0.75rem; color: var(--mute); }
+.booker.is-picking .booker__wait { display: none; }
+.booker__pick { display: none; list-style: none; margin: 0; padding: 0 var(--gutter); overflow-y: auto; height: 100%; }
+.booker.is-picking .booker__pick { display: block; }
+.booker__pick li { border-bottom: 1px solid var(--rule); }
+.booker__pick button {
+  display: grid; gap: 4px; width: 100%; padding: 18px 0; border: 0; background: none; color: var(--ink); text-align: left; cursor: pointer;
+  transition: padding 240ms var(--ease-out), color 200ms var(--ease-out);
+}
+.booker__pick b { font-family: var(--display); font-variation-settings: "wdth" 62; font-weight: 900; text-transform: uppercase; font-size: clamp(2rem, 7vw, 3rem); line-height: 0.9; }
+.booker__pick span { font-size: 0.9375rem; color: var(--ink-2); }
+.booker__pick button:hover { padding-left: 10px; }
+.booker__pick button:hover b { color: var(--spot-ink); }
+.booker__foot { display: flex; justify-content: space-between; gap: 12px; padding: 10px var(--gutter); border-top: 1px solid var(--ink); font-family: var(--mono); font-size: 0.6875rem; color: var(--mute); }
+.booker__foot a { color: var(--ink); }
+@media (prefers-reduced-motion: reduce) { .booker, .booker::backdrop { transition: none; } }

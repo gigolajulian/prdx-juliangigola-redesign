@@ -131,3 +131,56 @@ if (form) {
     }
   });
 }
+
+/* Booking: Squire opens in a /P/ panel instead of a new tab. Links stay plain links without JS. */
+const SQUIRE = "https://getsquire.com/booking/";
+const SHOPS = [
+  ["paradox-downtown-san-jose-san-jose", "Downtown San Jose", "111 N Market St #150"],
+  ["paradox-midtown-san-jose", "Midtown", "1409 W San Carlos St, 2nd floor"],
+  ["paradox-japantown-san-jose", "Japantown", "161 Jackson St, Suite 1"],
+  ["paradox-downtown-fremont-fremont", "Fremont", "3768 Capitol Ave, Suite H"],
+  ["anomaly-by-paradox-san-jose", "Anomaly", "1599 Berryessa Rd #60"],
+];
+const X = '<svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 2l10 10M12 2L2 12"/></svg>';
+const booker = document.createElement("dialog");
+booker.className = "booker";
+booker.setAttribute("aria-labelledby", "booker-title");
+booker.innerHTML = `
+  <header class="booker__top">
+    <h2 class="booker__title" id="booker-title">Book a chair</h2>
+    <button class="booker__close" type="button" aria-label="Close booking">${X}</button>
+  </header>
+  <nav class="booker__shops" aria-label="Shop">${SHOPS.map(([s, n]) => `<button type="button" data-shop="${s}">${n}</button>`).join("")}</nav>
+  <div class="booker__body">
+    <ul class="booker__pick">${SHOPS.map(([s, n, a]) => `<li><button type="button" data-shop="${s}"><b>${n}</b><span>${a}</span></button></li>`).join("")}</ul>
+    <p class="booker__wait">Opening the book…</p>
+    <iframe title="Book an appointment" hidden></iframe>
+  </div>
+  <footer class="booker__foot"><span>Booking by Squire</span><a target="_blank" rel="noopener" href="${SQUIRE}brands/paradox">Open in a new tab</a></footer>`;
+document.body.append(booker);
+const frame = booker.querySelector("iframe");
+const out = booker.querySelector(".booker__foot a");
+const pick = (slug) => {
+  booker.classList.toggle("is-picking", !slug);
+  booker.querySelectorAll(".booker__shops button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.shop === slug)));
+  out.href = slug ? `${SQUIRE}book/${slug}` : `${SQUIRE}brands/paradox`;
+  if (!slug) { frame.hidden = true; return; }
+  if (frame.dataset.shop !== slug) { frame.hidden = true; frame.dataset.shop = slug; frame.src = out.href; }
+};
+frame.addEventListener("load", () => { frame.hidden = !frame.dataset.shop; });
+booker.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-shop]");
+  if (b) pick(b.dataset.shop);
+  else if (e.target.closest(".booker__close") || e.target === booker) booker.close();
+});
+booker.addEventListener("close", () => { document.body.style.overflow = ""; });
+document.addEventListener("click", (e) => {
+  const a = e.target.closest(`a[href^="${SQUIRE}"]`);
+  if (!a || booker.contains(a) || e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
+  e.preventDefault();
+  document.querySelector(".contents.is-open .contents__close")?.click();
+  const slug = a.href.match(/\/book\/([^/?#]+)/)?.[1];
+  pick(SHOPS.some(([s]) => s === slug) ? slug : null);
+  booker.showModal();
+  document.body.style.overflow = "hidden";
+});
