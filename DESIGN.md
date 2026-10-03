@@ -111,6 +111,16 @@ components:
     textColor: "{colors.ink}"
     rounded: "{rounded.disc}"
     size: "clamp(112px, 12vw, 168px)"
+  plate:
+    backgroundColor: "{colors.paper-2}"
+    rounded: "{rounded.none}"
+  plate-more:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.paper}"
+    rounded: "{rounded.none}"
+  plate-more-hover:
+    backgroundColor: "{colors.spot}"
+    textColor: "{colors.ink}"
   field:
     textColor: "{colors.ink}"
     rounded: "{rounded.none}"
@@ -141,12 +151,12 @@ The world explicitly refuses the dark-luxury barbershop template: no black-and-g
 Newsprint and ink with a single spot plate, like a two-colour print job.
 
 ### Primary
-- **Barbicide Blue** (spot): the one spot ink. Solid fields only: the Book button, the sticker discs, the back-cover close band, drop caps, slashes in display type, focus outlines, selection, labels in the dark contents sheet and colophon. Text on it is always ink.
+- **Barbicide Blue** (spot): the one spot ink. Solid fields only: the Book button, the sticker discs, the back-cover close band, the "More at prdxsupply.com" tile on hover, drop caps, slashes in display type, focus outlines, selection, labels in the dark contents sheet and colophon. Text on it is always ink.
 - **Deep Barbicide** (spot-ink): the spot darkened for small text on paper (pathway numerals, caption-link hover, "new" year in the shop index, form success). Use it wherever spot would be too light to read as text.
 
 ### Neutral
 - **Newsprint** (paper): the page. Also the rail and the translucent contents strip.
-- **Proof Grey** (paper-2): the unprinted plate behind photos before they load, and the nav-pill hover.
+- **Proof Grey** (paper-2): the unprinted plate behind photos before they load, the ground product shots multiply onto in Shop plates, and the nav-pill hover.
 - **Press Ink** (ink): text, the 1px rules that open a list or close a header, the dark contents sheet, the colophon, the endpaper ground, the ink button.
 - **Second Ink** (ink-2): deks, pathway copy, form labels; text that is secondary but still reading copy.
 - **Folio Grey** (mute): folios, captions, cover-line descriptors, rail labels. Small mono only.
@@ -206,7 +216,7 @@ Flat paper. Depth comes from ink weight (1px ink rules open a list or close a he
 
 ## Shapes
 
-Square by default: photos, fields, rules and sections have no radius. Interactive pills (Book, ink button, nav items, menu and close buttons) are fully rounded (999px), and the sticker is a disc. Two things tilt: the sticker (-12deg on the cover, 10deg on the endpaper, straightening on hover) and the endpaper card (-1.5deg). The paisley bandana is the only pattern, used as the endpaper and as the endband above the colophon.
+Square by default: photos, fields, rules and sections have no radius. Interactive pills (Book, ink button, nav items, menu and close buttons) are fully rounded (999px), and the sticker is a disc. Two things tilt: the sticker (-12deg on the cover, 10deg on the endpaper and the Shop opener, straightening on hover) and the endpaper card (-1.5deg). The paisley bandana is the only pattern, used as the endpaper and as the endband above the colophon.
 
 ## Components
 
@@ -218,6 +228,7 @@ Square by default: photos, fields, rules and sections have no radius. Interactiv
 - **Arrow link:** uppercase label with a 1px underline that wipes out to the right on hover; the companion to a button.
 
 ### Navigation
+- **Order:** 01 Cover, 02 About, 03 Locations, 04 ĒDUCŌ (external), 05 Shop, 06 Contact; same numbering in the strip and the mobile contents sheet.
 - **Contents strip:** logo left, numbered items (mono numeral + wdth 88 label) in pills; hover paper-2, current page ink with the numeral in spot. External items carry a small northeast arrow.
 - **Mobile contents:** a full-screen ink sheet revealed top-down by clip-path (560ms), items as numbered condensed display lines staggering up 40ms apart, Book button pinned to the bottom.
 - **Folio rail:** vertical page folio, a 1px progress line filling in ink, and a year counter that rolls digits as sections change.
@@ -233,6 +244,14 @@ Every editorial photograph is a print: shown grayscale at 1.35 contrast with a 4
 
 ### Shop Index
 Full-width rows of slashed shop names at headline scale with year and mono meta right-aligned. Hover slides the name 14px, prints the slashes blue, and floats a tilted 300px photo peek at the cursor (pointer devices only). Below 700px rows gain a 72px square thumbnail.
+
+### Product Plate
+The Shop (PRDX Supply) unit, in a 2-column grid (4 at 900px+, gap 28px by gutter; the feature set staggers odd plates down 64px). Each plate is one link to the product on prdxsupply.com.
+- **Plate:** square, no radius, paper-2 ground; the product shot covers it with `mix-blend-mode: multiply` so its white drops into the proof grey. Product shots are not prints: no halftone develop. Hover scales the image to 1.03 (600ms ease-out); where the device can hover, an alternate shot crossfades in (360ms). On `hover: none` the alternate is not shown at all.
+- **Caption:** a 1px ink rule over a two-column grid: the name full width in condensed 900 uppercase (clamp(1.1rem, 1.6vw, 1.5rem), larger in the feature set), then mono "No. 01" in mute at left and the price in mono 600 at right, or a mono uppercase "Sold out" in mute in its place.
+- **Sold out:** image grayscale at 0.45 opacity, no alternate shot, name in mute struck through at 2px.
+- **More tile:** a plate-sized ink square with a centered condensed "More at prdxsupply.com" and a northeast arrow in paper; hover floods it spot with ink text (240ms). Added only when the last row has an empty cell.
+- **Lead plate:** the Shop opener pairs the title with one product as a print (halftone develop, multiplied) beside it, a Sticker labelled Shop overlapping its edge (bottom-left on desktop, top-right on mobile), and a mono "Prices and stock as of [date]. Final at prdxsupply.com." line in mute under the actions.
 
 ### Sticker
 A spot disc with a slowly rotating mono ring of text (24s per turn) around a condensed two-word label; tilted, straightening and growing 4% on hover. Always a link to the action it names (Book, Shop).

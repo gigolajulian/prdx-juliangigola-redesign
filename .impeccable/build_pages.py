@@ -8,6 +8,7 @@ _, foot = rest.split("</main>", 1)
 pages = {
     "about": ("About — /Paradox/", "Founded in San Jose in 2015, /Paradox/ is a barber collective led by JR Soriano, Don Gomez, Jeff Phan and Jordan Benigno.", "P. 02 — About", "2011", "img/team-4-1600.webp"),
     "locations": ("Locations — /Paradox/", "Five /Paradox/ shops across the Bay Area: Downtown San Jose, Fremont, Japantown, Midtown and Anomaly.", "P. 03 — Locations", "2015", None),
+    "shop": ("Shop — /Paradox/", "Clothes by /P/: PRDX Supply, the clothing line of /Paradox/. Caps, knits, shirts and the Rila × /Paradox/ collaboration.", "P. 05 — Shop", "2026", None),
     "contact": ("Contact — /Paradox/", "Reach out to /Paradox/ with questions or comments about the shops, ĒDUCŌ Academy or PRDX Supply.", "P. 06 — Contact", "2026", None),
 }
 for name, (title, desc, folio, year, pre) in pages.items():
