@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — /Paradox/</title>
+  <meta name="description" content="Reach out to /Paradox/ with questions or comments about the shops, ĒDUCŌ Academy or PRDX Supply.">
+  <meta name="theme-color" content="#f2f2ee">
+  <link rel="icon" href="https://images.squarespace-cdn.com/content/v1/66dd391bbac86524edf6f5d5/88f1ac40-78c0-4f15-a7ba-6fe00e70871a/favicon.ico?format=100w">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Bodoni+Moda:ital,opsz,wght@1,6..96,400..700&family=Geist+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="rail mono" aria-hidden="true">
+  <span class="rail__page">P. 06 — Contact</span>
+  <div class="rail__progress"><i></i></div>
+  <div class="rail__year"><span class="rail__label">Year</span><div class="rail__digits"><span>2026</span></div></div>
+</aside>
+
+<header class="strip">
+  <div class="strip__inner">
+    <a class="strip__logo" href="index.html" aria-label="/Paradox/ home"><img src="img/logo-ink.png" alt="/Paradox/" width="1984" height="432"></a>
+    <nav class="strip__nav" aria-label="Contents">
+      <ol>
+        <li><a href="index.html"><small>01</small>Cover</a></li>
+        <li><a href="about.html"><small>02</small>About</a></li>
+        <li><a href="locations.html"><small>03</small>Locations</a></li>
+        <li><a href="https://www.educoacademy.us/" target="_blank" rel="noopener"><small>04</small>ĒDUCŌ<svg class="ext" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a></li>
+        <li><a href="https://www.prdxsupply.com/" target="_blank" rel="noopener"><small>05</small>Shop<svg class="ext" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a></li>
+        <li><a href="contact.html" aria-current="page"><small>06</small>Contact</a></li>
+      </ol>
+    </nav>
+    <a class="btn-book" href="https://getsquire.com/booking/brands/paradox" target="_blank" rel="noopener">Book<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Open contents" aria-expanded="false" aria-controls="contents"><span></span></button>
+  </div>
+</header>
+
+<div class="contents" id="contents" role="dialog" aria-modal="true" aria-label="Contents">
+  <div class="contents__top">
+    <img src="img/logo-paper.png" alt="" width="1984" height="432">
+    <button class="contents__close" type="button" aria-label="Close contents"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 2l10 10M12 2L2 12"/></svg></button>
+  </div>
+  <h2 class="mono">Contents</h2>
+  <ol>
+    <li><a href="index.html"><small>01</small>Cover</a></li>
+    <li><a href="about.html"><small>02</small>About</a></li>
+    <li><a href="locations.html"><small>03</small>Locations</a></li>
+    <li><a href="https://www.educoacademy.us/" target="_blank" rel="noopener"><small>04</small>ĒDUCŌ</a></li>
+    <li><a href="https://www.prdxsupply.com/" target="_blank" rel="noopener"><small>05</small>Shop</a></li>
+    <li><a href="contact.html"><small>06</small>Contact</a></li>
+  </ol>
+  <a class="btn-book" href="https://getsquire.com/booking/brands/paradox" target="_blank" rel="noopener">Book an appointment</a>
+</div>
+
+<main id="main">
+  <section class="opener opener--short wrap" data-year="2026" aria-labelledby="contact-title">
+    <div class="folio-bar mono"><span>Vol. 11 — Est. 2015</span><span>San Jose, California</span><span>Letters to /Paradox/</span></div>
+    <h1 class="display opener__title" id="contact-title">Contact</h1>
+    <p class="opener__stand">Reach out to us with questions or comments about /Paradox/ or our platforms.</p>
+  </section>
+
+  <section class="contact wrap" data-year="2026" aria-label="Send a message">
+    <!-- Set data-endpoint to a form backend URL (Formspree, Basin, etc.) to receive messages. -->
+    <form class="form" data-endpoint="" novalidate>
+      <div class="form__row">
+        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required><span class="err" aria-live="polite"></span></div>
+      </div>
+      <div class="field">
+        <label for="f-topic">About</label>
+        <select id="f-topic" name="topic">
+          <option>General</option>
+          <option>A shop or a barber</option>
+          <option>ĒDUCŌ Academy</option>
+          <option>PRDX Supply</option>
+          <option>Press &amp; collaborations</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea><span class="err" aria-live="polite"></span></div>
+      <button class="btn-ink" type="submit">Send message<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+
+    <aside class="contact__aside">
+      <ul>
+        <li><b>Downtown</b><span class="mono">111 N Market St #150<br>San Jose</span></li>
+        <li><b>Fremont</b><span class="mono">3768 Capitol Ave STE H<br>Fremont</span></li>
+        <li><b>Japantown</b><span class="mono">161 Jackson St<br>San Jose</span></li>
+        <li><b>Midtown</b><span class="mono">1409 W San Carlos St<br>San Jose</span></li>
+        <li><b>Anomaly</b><span class="mono">1599 Berryessa Rd #60<br>San Jose</span></li>
+      </ul>
+      <a class="link-arrow" href="https://instagram.com/paradoxbarbers" target="_blank" rel="noopener">@paradoxbarbers on Instagram</a>
+      <a class="btn-book contact__book" href="https://getsquire.com/booking/brands/paradox" target="_blank" rel="noopener">Book an appointment<svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l6-6M4 3h5v5"/></svg></a>
+    </aside>
+  </section>
+</main>
+
+<div class="endband" aria-hidden="true"></div>
+<footer class="colophon">
+  <img class="colophon__logo" src="img/logo-paper.png" alt="/Paradox/" width="1984" height="432" loading="lazy">
+  <div class="colophon__grid">
+    <div>
+      <h2 class="mono">Locations</h2>
+      <ul>
+        <li><a href="locations.html#downtown">Downtown</a> <address>111 N Market St #150, San Jose</address></li>
+        <li><a href="locations.html#fremont">Fremont</a> <address>3768 Capitol Ave STE H, Fremont</address></li>
+        <li><a href="locations.html#japantown">Japantown</a> <address>161 Jackson St, San Jose</address></li>
+        <li><a href="locations.html#midtown">Midtown</a> <address>1409 W San Carlos St, San Jose</address></li>
+        <li><a href="locations.html#anomaly">Anomaly</a> <address>1599 Berryessa Rd #60, San Jose</address></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="mono">Paradox</h2>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="mono">Platforms</h2>
+      <ul>
+        <li><a href="https://www.educoacademy.us/" target="_blank" rel="noopener">ĒDUCŌ Academy</a></li>
+        <li><a href="https://www.prdxsupply.com/" target="_blank" rel="noopener">PRDX Supply</a></li>
+        <li><a href="https://www.theanomalystudio.com/" target="_blank" rel="noopener">The Anomaly Studio</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="mono">Follow</h2>
+      <ul>
+        <li><a href="https://instagram.com/paradoxbarbers" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://getsquire.com/booking/brands/paradox" target="_blank" rel="noopener">Book on Squire</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="colophon__base mono">
+    <span>© /Paradox/ — San Jose, California</span>
+    <span>Est. 2015</span>
+  </div>
+</footer>
+</body>
+</html>

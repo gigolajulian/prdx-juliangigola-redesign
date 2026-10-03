@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T04:56:35+00:00",
+  "title": "Design System: /Paradox/",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Newsprint",
+        "canonical": "oklch(96.0% 0.005 106)",
+        "tonalRamp": [
+          "oklch(15% 0.005 106)",
+          "oklch(25% 0.005 106)",
+          "oklch(38% 0.005 106)",
+          "oklch(50% 0.005 106)",
+          "oklch(62% 0.005 106)",
+          "oklch(74% 0.005 106)",
+          "oklch(86% 0.005 106)",
+          "oklch(95% 0.005 106)"
+        ]
+      },
+      "paper-2": {
+        "role": "neutral",
+        "displayName": "Proof Grey",
+        "canonical": "oklch(92.6% 0.008 107)",
+        "tonalRamp": [
+          "oklch(15% 0.008 107)",
+          "oklch(25% 0.008 107)",
+          "oklch(38% 0.008 107)",
+          "oklch(50% 0.008 107)",
+          "oklch(62% 0.008 107)",
+          "oklch(74% 0.008 107)",
+          "oklch(86% 0.008 107)",
+          "oklch(95% 0.008 107)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Press Ink",
+        "canonical": "oklch(16.4% 0 0)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(74% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Second Ink",
+        "canonical": "oklch(34.7% 0.005 107)",
+        "tonalRamp": [
+          "oklch(15% 0.005 107)",
+          "oklch(25% 0.005 107)",
+          "oklch(38% 0.005 107)",
+          "oklch(50% 0.005 107)",
+          "oklch(62% 0.005 107)",
+          "oklch(74% 0.005 107)",
+          "oklch(86% 0.005 107)",
+          "oklch(95% 0.005 107)"
+        ]
+      },
+      "mute": {
+        "role": "neutral",
+        "displayName": "Folio Grey",
+        "canonical": "oklch(52.6% 0.008 107)",
+        "tonalRamp": [
+          "oklch(15% 0.008 107)",
+          "oklch(25% 0.008 107)",
+          "oklch(38% 0.008 107)",
+          "oklch(50% 0.008 107)",
+          "oklch(62% 0.008 107)",
+          "oklch(74% 0.008 107)",
+          "oklch(86% 0.008 107)",
+          "oklch(95% 0.008 107)"
+        ]
+      },
+      "spot": {
+        "role": "primary",
+        "displayName": "Barbicide Blue",
+        "canonical": "oklch(66.1% 0.120 219)",
+        "tonalRamp": [
+          "oklch(15% 0.12 219)",
+          "oklch(25% 0.12 219)",
+          "oklch(38% 0.12 219)",
+          "oklch(50% 0.12 219)",
+          "oklch(62% 0.12 219)",
+          "oklch(74% 0.12 219)",
+          "oklch(86% 0.12 219)",
+          "oklch(95% 0.12 219)"
+        ]
+      },
+      "spot-ink": {
+        "role": "primary",
+        "displayName": "Deep Barbicide",
+        "canonical": "oklch(35.1% 0.075 235)",
+        "tonalRamp": [
+          "oklch(15% 0.075 235)",
+          "oklch(25% 0.075 235)",
+          "oklch(38% 0.075 235)",
+          "oklch(50% 0.075 235)",
+          "oklch(62% 0.075 235)",
+          "oklch(74% 0.075 235)",
+          "oklch(86% 0.075 235)",
+          "oklch(95% 0.075 235)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgba(14, 14, 14, 0.18)",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(74% 0 0)",
+          "oklch(86% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Proof Red",
+        "canonical": "oklch(50.1% 0.178 29)",
+        "tonalRamp": [
+          "oklch(15% 0.178 29)",
+          "oklch(25% 0.178 29)",
+          "oklch(38% 0.178 29)",
+          "oklch(50% 0.178 29)",
+          "oklch(62% 0.178 29)",
+          "oklch(74% 0.178 29)",
+          "oklch(86% 0.178 29)",
+          "oklch(95% 0.178 29)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page openers and the back-cover Book now."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Feature heads, shop names, shop-index names."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Cover lines and small condensed list titles."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Statement spreads, horizon line, opener stand-firsts."
+      },
+      "dek": {
+        "displayName": "Dek",
+        "purpose": "Context line beside or after a feature headline."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "First paragraph of an article, with spot drop cap."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading copy, max 68ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, nav items, arrow links."
+      },
+      "mono": {
+        "displayName": "Mono",
+        "purpose": "Folios, captions, numbers, years, addresses, form labels. Data only."
+      }
+    },
+    "shadows": [
+      {
+        "name": "laid-card",
+        "value": "0 30px 60px -20px rgba(0,0,0,.6)",
+        "purpose": "Only for a paper card laid on the paisley endpaper."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "Default for hovers, develops and reveals."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(0.77, 0, 0.175, 1)",
+        "purpose": "Clip-path wipes: masthead reveal, mobile contents sheet."
+      },
+      {
+        "name": "develop",
+        "value": "filter 1600ms, transform 1800ms, halftone fade 1400ms, ease-out",
+        "purpose": "Print develops from halftone grayscale to colour on viewport entry."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97) 160ms ease-out",
+        "purpose": "Active state on pill buttons."
+      },
+      {
+        "name": "sticker-spin",
+        "value": "rotate 360deg 24s linear infinite",
+        "purpose": "Sticker ring text; disabled under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "thumbs",
+        "value": "700px"
+      },
+      {
+        "name": "spread",
+        "value": "900px"
+      },
+      {
+        "name": "rail",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Book Button",
+      "kind": "button",
+      "refersTo": "button-book",
+      "description": "Spot pill for the booking action; in the strip on every page.",
+      "html": "<a class=\"ds-btn-book\" href=\"#\">Book<svg viewBox=\"0 0 12 12\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M3 9l6-6M4 3h5v5\"/></svg></a>",
+      "css": ".ds-btn-book { display: inline-flex; align-items: center; gap: 10px; height: 40px; padding: 0 18px; background: var(--spot, #00a3c4); color: var(--ink, #0e0e0e); font-family: var(--display); font-variation-settings: 'wdth' 88; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.8125rem; text-decoration: none; border-radius: 999px; transition: transform 160ms cubic-bezier(0.23,1,0.32,1), background-color 200ms cubic-bezier(0.23,1,0.32,1); } .ds-btn-book svg { transition: transform 240ms cubic-bezier(0.23,1,0.32,1); } .ds-btn-book:hover { background: #1db4d2; } .ds-btn-book:hover svg { transform: translate(2px,-2px); } .ds-btn-book:active { transform: scale(0.97); } .ds-btn-book:focus-visible { outline: 2px solid var(--spot, #00a3c4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Ink pill for every other committed action.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">Join the waitlist<svg viewBox=\"0 0 12 12\" width=\"12\" height=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" aria-hidden=\"true\"><path d=\"M3 9l6-6M4 3h5v5\"/></svg></a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 22px; background: var(--ink, #0e0e0e); color: var(--paper, #f2f2ee); font-family: var(--display); font-variation-settings: 'wdth' 88; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.875rem; text-decoration: none; border-radius: 999px; transition: transform 160ms cubic-bezier(0.23,1,0.32,1), background-color 200ms cubic-bezier(0.23,1,0.32,1); } .ds-btn-ink:hover { background: #262624; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 2px solid var(--spot, #00a3c4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "button",
+      "refersTo": "link-arrow",
+      "description": "Uppercase text link whose underline wipes out on hover; companion to a button.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">See all locations</a>",
+      "css": ".ds-link-arrow { display: inline-flex; font-family: var(--display); font-variation-settings: 'wdth' 88; font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; font-size: 0.875rem; color: var(--ink, #0e0e0e); text-decoration: none; padding-bottom: 4px; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; transition: background-size 320ms cubic-bezier(0.23,1,0.32,1); } .ds-link-arrow:hover { background-size: 0% 1px; background-position: 100% 100%; } .ds-link-arrow:focus-visible { outline: 2px solid var(--spot, #00a3c4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Contents Strip Nav",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "Numbered pill nav; current page in ink with spot numeral.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\"><small>01</small>Cover</a><a href=\"#\"><small>02</small>About</a><a href=\"#\"><small>03</small>Locations</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; } .ds-nav a { display: flex; align-items: baseline; gap: 6px; padding: 8px 10px; color: var(--ink, #0e0e0e); text-decoration: none; font-family: var(--display); font-variation-settings: 'wdth' 88; font-weight: 600; font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.02em; border-radius: 999px; transition: background-color 200ms cubic-bezier(0.23,1,0.32,1), color 200ms cubic-bezier(0.23,1,0.32,1); } .ds-nav small { font-family: var(--mono); font-size: 0.6875rem; font-weight: 400; color: var(--mute, #6b6b66); } .ds-nav a:hover { background: var(--paper-2, #e7e7e1); } .ds-nav a[aria-current='page'] { background: var(--ink, #0e0e0e); color: var(--paper, #f2f2ee); } .ds-nav a[aria-current='page'] small { color: var(--spot, #00a3c4); } .ds-nav a:focus-visible { outline: 2px solid var(--spot, #00a3c4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Underline Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Underline-only field with mono label and spot caret.",
+      "html": "<label class=\"ds-field\"><span>Your name</span><input type=\"text\" placeholder=\"Name\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; } .ds-field span { font-family: var(--mono); font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--ink-2, #3a3a37); } .ds-field input { font: inherit; font-size: 1.125rem; color: var(--ink, #0e0e0e); background: transparent; border: 0; border-bottom: 1px solid var(--ink, #0e0e0e); border-radius: 0; padding: 10px 0; caret-color: var(--spot, #00a3c4); transition: border-color 200ms cubic-bezier(0.23,1,0.32,1); } .ds-field input:focus { outline: none; border-color: var(--spot, #00a3c4); }"
+    },
+    {
+      "name": "Cover Lines",
+      "kind": "custom",
+      "refersTo": "coverlines",
+      "description": "Numbered cover-line links: mono numeral, condensed title, mono descriptor.",
+      "html": "<ul class=\"ds-coverlines\"><li><a href=\"#\"><span class=\"n\">01</span><span class=\"t\">Cuts by <i>/</i>P<i>/</i></span><span class=\"d\">Book an<br>appointment</span></a></li><li><a href=\"#\"><span class=\"n\">02</span><span class=\"t\">Five shops</span><span class=\"d\">San Jose<br>&amp; Fremont</span></a></li></ul>",
+      "css": ".ds-coverlines { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink, #0e0e0e); } .ds-coverlines li { border-bottom: 1px solid var(--rule, rgba(14,14,14,.18)); } .ds-coverlines a { display: grid; grid-template-columns: 2.4em 1fr auto; align-items: baseline; gap: 8px; padding: 14px 0 12px; color: var(--ink, #0e0e0e); text-decoration: none; } .ds-coverlines .n, .ds-coverlines .d { font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; color: var(--mute, #6b6b66); } .ds-coverlines .d { text-align: right; } .ds-coverlines .t { font-family: var(--display); font-variation-settings: 'wdth' 62; font-weight: 900; text-transform: uppercase; font-size: 2.6rem; line-height: 0.88; transition: transform 300ms cubic-bezier(0.23,1,0.32,1); } .ds-coverlines i { font-style: normal; color: var(--spot, #00a3c4); } .ds-coverlines a:hover .t { transform: translateX(6px); } .ds-coverlines a:hover .n { color: var(--spot, #00a3c4); } .ds-coverlines a:focus-visible { outline: 2px solid var(--spot, #00a3c4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Print with Caption",
+      "kind": "card",
+      "refersTo": "print",
+      "description": "Halftone grayscale print that develops to colour on entry (hover stands in for entry here); caption carries the next step.",
+      "html": "<figure class=\"ds-print\"><span class=\"ds-print__img\"><img src=\"img/downtown-800.webp\" alt=\"The Downtown HQ\"></span><figcaption><span>The /P/ HQ, 111 N Market St</span><a href=\"#\">Visit Downtown</a></figcaption></figure>",
+      "css": ".ds-print { margin: 0; } .ds-print__img { display: block; position: relative; overflow: hidden; aspect-ratio: 16/10; background: var(--paper-2, #e7e7e1); } .ds-print img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1) contrast(1.35) brightness(1.04); transform: scale(1.06); transition: filter 1600ms cubic-bezier(0.23,1,0.32,1), transform 1800ms cubic-bezier(0.23,1,0.32,1); } .ds-print__img::after { content: ''; position: absolute; inset: 0; pointer-events: none; background-image: radial-gradient(circle, rgba(14,14,14,.55) 0.9px, transparent 1.3px); background-size: 4px 4px; mix-blend-mode: multiply; opacity: .55; transition: opacity 1400ms cubic-bezier(0.23,1,0.32,1); } .ds-print:hover img { filter: none; transform: scale(1); } .ds-print:hover .ds-print__img::after { opacity: 0; } .ds-print figcaption { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.02em; color: var(--mute, #6b6b66); } .ds-print figcaption a { color: var(--ink, #0e0e0e); font-weight: 600; text-decoration: none; border-bottom: 1px solid currentColor; transition: color 200ms cubic-bezier(0.23,1,0.32,1); } .ds-print figcaption a:hover { color: var(--spot-ink, #00405c); }"
+    },
+    {
+      "name": "Sticker",
+      "kind": "custom",
+      "refersTo": "sticker",
+      "description": "Tilted spot disc with rotating mono ring text; links to the action it names.",
+      "html": "<a class=\"ds-sticker\" href=\"#\" aria-label=\"Book an appointment\"><svg class=\"ring\" viewBox=\"0 0 100 100\" aria-hidden=\"true\"><defs><path id=\"ds-ring\" d=\"M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0\"/></defs><text><textPath href=\"#ds-ring\">Book an appointment · Book an appointment · </textPath></text></svg><b>Book<br>now</b></a>",
+      "css": ".ds-sticker { position: relative; width: 150px; aspect-ratio: 1; border-radius: 50%; background: var(--spot, #00a3c4); color: var(--ink, #0e0e0e); text-decoration: none; display: grid; place-items: center; text-align: center; transform: rotate(-12deg); transition: transform 500ms cubic-bezier(0.23,1,0.32,1); } .ds-sticker .ring { position: absolute; inset: 6%; width: 88%; height: 88%; animation: ds-spin 24s linear infinite; } .ds-sticker text { font-family: var(--mono); font-size: 9.2px; letter-spacing: 1.4px; text-transform: uppercase; fill: currentColor; } .ds-sticker b { font-family: var(--display); font-variation-settings: 'wdth' 62; font-weight: 900; text-transform: uppercase; font-size: 1.7rem; line-height: 0.85; } .ds-sticker:hover { transform: rotate(0) scale(1.04); } .ds-sticker:active { transform: rotate(0) scale(0.98); } .ds-sticker:focus-visible { outline: 2px solid var(--ink, #0e0e0e); outline-offset: 3px; } @keyframes ds-spin { to { transform: rotate(360deg); } } @media (prefers-reduced-motion: reduce) { .ds-sticker .ring { animation: none; } }"
+    },
+    {
+      "name": "Shop Index Row",
+      "kind": "custom",
+      "refersTo": "shop-index",
+      "description": "Slashed shop name at headline scale; slashes print blue on hover.",
+      "html": "<ul class=\"ds-index\"><li><a href=\"#\"><span class=\"name\"><i>/</i>Midtown<i>/</i></span><span class=\"meta\"><b>2015</b><span>Where it began</span></span></a></li></ul>",
+      "css": ".ds-index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink, #0e0e0e); } .ds-index li { border-bottom: 1px solid var(--rule, rgba(14,14,14,.18)); } .ds-index a { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 16px; padding: 18px 0; color: var(--ink, #0e0e0e); text-decoration: none; } .ds-index .name { font-family: var(--display); font-variation-settings: 'wdth' 62; font-weight: 900; text-transform: uppercase; font-size: 4.5rem; line-height: 0.84; transition: transform 420ms cubic-bezier(0.23,1,0.32,1); } .ds-index i { font-style: normal; color: var(--rule, rgba(14,14,14,.18)); transition: color 200ms cubic-bezier(0.23,1,0.32,1); } .ds-index .meta { display: grid; justify-items: end; gap: 2px; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; color: var(--mute, #6b6b66); } .ds-index .meta b { font-size: 0.875rem; font-weight: 600; color: var(--ink, #0e0e0e); } .ds-index a:hover .name { transform: translateX(14px); } .ds-index a:hover i { color: var(--spot, #00a3c4); } .ds-index a:focus-visible { outline: 2px solid var(--spot, #00a3c4); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Issue",
+    "overview": "/Paradox/ is published, not presented. Every page is a spread from one magazine issue: a cover with a masthead and numbered cover lines, features with numbers and deks, a folio rail counting pages and years, captions that do real navigation, a paisley endpaper and a spot-blue back cover. The register is a Japanese street-culture magazine: two inks on cool newsprint, one spot colour, condensed grotesk at shouting scale set against small mono folios.\n\nDensity alternates like a printed issue. Display type runs to the edge at extreme size, then gives way to quiet measured columns of body text and generous feature padding. Photographs arrive as ink halftone prints and develop to colour as they enter the viewport; that develop is the system's signature motion. Depth is paper-flat everywhere except one physical card laid over the endpaper.\n\nThe world explicitly refuses the dark-luxury barbershop template: no black-and-gold, no centered serif hero with a Book button, no glow.",
+    "keyCharacteristics": [
+      "Two inks (paper, ink) plus one spot (Barbicide blue), used as solid fields and stickers.",
+      "Archivo condensed (wdth 62, weight 900, uppercase) at extreme scale; Bodoni Moda italic for voice; Geist Mono for data only.",
+      "The slash is the only typographic ornament: /Paradox/, /P/, /Downtown/.",
+      "Hairline rules and numbered lists structure every page; no cards, no boxes.",
+      "Photos print in halftone grayscale and develop to colour on entry."
+    ],
+    "rules": [
+      {
+        "name": "The Spot Plate Rule",
+        "body": "Barbicide blue is printed, never emitted: solid fills, discs, slashes and outlines only. No gradients, glows, tints or blue shadows.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Ink Rule",
+        "body": "Every surface is paper on ink or ink on paper; the spot is the only third colour. Photographs carry all other colour, and only after they develop.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dek Rule",
+        "body": "A headline is introduced by nothing. Context goes in a Bodoni italic dek set beside or after it, never in a small label stacked above it.",
+        "section": "typography"
+      },
+      {
+        "name": "The Data-Only Mono Rule",
+        "body": "Geist Mono sets numbers, years, addresses, folios and captions. It never sets a sentence of prose or a headline.",
+        "section": "typography"
+      },
+      {
+        "name": "The Slash Rule",
+        "body": "The slash, in spot blue inside display type, is the only typographic ornament. In the shop index it rests at hairline grey and prints blue on hover.",
+        "section": "typography"
+      },
+      {
+        "name": "The Folio Rule",
+        "body": "Every page opens with a mono folio bar (volume, place, date range) ruled in ink beneath, and the rail on desktop tracks page name, scroll progress and the year of the section in view.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Page Rule",
+        "body": "Nothing on paper casts a shadow. Elevation is reserved for a paper object laid on the endpaper.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Caption-as-Navigation Rule",
+        "body": "A caption names the place in mono and carries the next step: a right-aligned ink link (Visit Downtown, Get directions) underlined in its own colour, turning deep spot on hover.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "Do print every editorial photo through the halftone develop; never show a raw colour photo in a spread.",
+      "Do number things: nav items, cover lines, features, pathway steps (I., II., III.), shops (1 of 5).",
+      "Do set context in a Bodoni italic dek beside or after the headline.",
+      "Do put the next action in the caption when a photo shows a place.",
+      "Do keep Book in the strip on every page and one tap away on mobile.",
+      "Do write the brand with slashes and spot-blue slashes in display type: /Paradox/, /P/."
+    ],
+    "donts": [
+      "Don't use the spot as glow, gradient, tint or shadow.",
+      "Don't add a third ink or any colour beyond paper, ink, spot and their listed derivatives.",
+      "Don't stack small uppercase labels (kickers, eyebrows) above headlines.",
+      "Don't set prose or headlines in Geist Mono.",
+      "Don't add shadows or radius to anything on the paper page; pills and discs are for interactive controls only.",
+      "Don't build the dark-luxury barbershop hero: black and gold, centered serif, centered Book button."
+    ]
+  }
+}

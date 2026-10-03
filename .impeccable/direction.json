@@ -1,0 +1,127 @@
+{
+  "title": "Choose the visual world for /Paradox/",
+  "question": "The roll assigned The Issue. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Issue",
+      "kicker": "THE ROLL",
+      "lineage": "Tokyo street-culture magazines (Popeye, Huge, Free & Easy) — the Bay's Japantown taste",
+      "thesis": "/Paradox/ published as a magazine: every page a feature spread, every barber a cover story.",
+      "palette": ["#0E0E0E", "#F2F2EE", "#00A3C4", "#8A8A84"],
+      "materials": ["uncoated magazine stock", "halftone photo", "paisley endpaper", "Barbicide-blue spot ink"],
+      "viewport": "A magazine cover: giant /Paradox/ masthead, the nape photo as cover image, numbered cover lines (01 Cuts · 02 ĒDUCŌ · 03 Shop · 04 Five Shops), issue folio 'Est. 2015 — San Jose', Book sits as a cover-line sticker.",
+      "risk": "Tips into costume if the magazine grammar is decoration instead of structure (folios, feature numbers, captions must do real navigation work).",
+      "raised": [
+        {"from": "challenger-cabaret", "raise": "Two inks and one spot, no midtones in chrome: photos print as ink halftone and develop to full colour as they enter the page."},
+        {"from": "challenger-deep-dive", "raise": "One vertical folio rail rules every page: page number plus the 2011 → 2126 year axis ('a hundred years is the horizon') as you scroll."},
+        {"from": "challenger-seven-segment", "raise": "Absence is designed: the shop index draws every shop's open/booking state, including the newest, as deliberately as the lit ones."}
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "The Drop",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "streetwear drop sites and lookbooks (Kith, Fear of God, Aimé)",
+      "thesis": "Each shop and each barber released like a collection drop.",
+      "palette": ["#000000", "#FFFFFF", "#D9D6CF"],
+      "materials": ["full-bleed lookbook photography", "condensed grotesk", "the slash as the only ornament"],
+      "viewport": "Full-bleed photo carousel, tiny tracked nav, /Paradox/ wordmark centered, 'Book' bottom-right.",
+      "risk": "Familiar: this is where most premium barbershop and streetwear sites land."
+    },
+    {
+      "id": "challenger-cabaret",
+      "label": "Weimar Cabaret Bill",
+      "verdict": "declined",
+      "lineage": "1920s Berlin two-ink cabaret posters",
+      "thesis": "The shop's programme as an evening bill in acid yellow and black.",
+      "palette": ["#E6E21C", "#0A0A0A"],
+      "materials": ["cheap poster stock", "expressionist leaning type"],
+      "viewport": "A black field with an angular barber portrait, the five shops ranked as acts.",
+      "case": "Fuses poorly: the Bay barber audience has no relationship with Weimar theatre.",
+      "risk": "Reads as a theatre poster, not a barbershop.",
+      "kept": "Total two-ink commitment, no grey chrome.",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-weimar-cabaret-bill-hero.webp"
+    },
+    {
+      "id": "challenger-deep-dive",
+      "label": "Mesophotic Deep Dive",
+      "verdict": "declined",
+      "lineage": "technical dive profiles",
+      "thesis": "Scroll as a descent from 2011 to the hundred-year horizon.",
+      "palette": ["#071A2C", "#E8EEF2", "#3FD6E0"],
+      "materials": ["abyssal gradient", "dive-computer digits"],
+      "viewport": "A diver-depth axis with the founding year at the surface.",
+      "case": "Fuses poorly: an ocean metaphor buries the barbers and the shops.",
+      "risk": "Pure metaphor; the product disappears.",
+      "kept": "One vertical axis ruling every line of copy.",
+      "hero": "https://impeccable.style/worlds/cards/rivers-tides-ocean-depths-mesophotic-deep-dive-hero.webp"
+    },
+    {
+      "id": "challenger-seven-segment",
+      "label": "Seven-Segment Display",
+      "verdict": "declined",
+      "lineage": "clocks, scoreboards, price totems",
+      "thesis": "Shop info as a lit LED totem.",
+      "palette": ["#0B0B0B", "#FF3B1F", "#2A1210"],
+      "materials": ["LED segments", "ghost cells"],
+      "viewport": "Five shops as a stadium scoreboard.",
+      "case": "Fuses poorly: cold instrument language against a warm, people-first craft.",
+      "risk": "Gimmick fatigue after one viewport.",
+      "kept": "Designing the unlit states as carefully as the lit ones.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-seven-segment-alarm-clock-hero.webp"
+    },
+    {
+      "id": "challenger-specimen",
+      "label": "Variable Font Specimen",
+      "verdict": "declined",
+      "lineage": "type foundry specimens",
+      "thesis": "The /P/ slash as a live typographic specimen.",
+      "palette": ["#F5F5F2", "#0E0E0E", "#FF4D00"],
+      "materials": ["paper white", "giant glyphs"],
+      "viewport": "A giant /P/ morphing under a weight slider.",
+      "case": "Fuses poorly: barbers and clients are not type nerds.",
+      "risk": "Type showcase, no people.",
+      "kept": "Hierarchy by extreme scale contrast alone.",
+      "hero": "https://impeccable.style/worlds/cards/variable-font-specimen-hero.webp"
+    },
+    {
+      "id": "challenger-city-fold",
+      "label": "Sleeping City Fold",
+      "verdict": "declined",
+      "lineage": "surreal folded-city illustration",
+      "thesis": "The Bay folds like a quilt, each shop a dreaming district.",
+      "palette": ["#14203A", "#E7C873", "#F2EFE6"],
+      "materials": ["quilted map", "embroidered stars"],
+      "viewport": "A folded night map of the five shops.",
+      "case": "Fuses poorly: whimsy fights 'precision is the brand'.",
+      "risk": "Needs illustration assets that do not exist.",
+      "kept": "Each shop keeps its own district identity within one map."
+    },
+    {
+      "id": "challenger-shareware",
+      "label": "Shareware Installer",
+      "verdict": "declined",
+      "lineage": "1990s install wizards",
+      "thesis": "Booking as a linear install wizard.",
+      "palette": ["#C0C0C0", "#000080", "#FFFFFF"],
+      "materials": ["beveled chrome", "dithered banner"],
+      "viewport": "A grey dialog asking which shop to install.",
+      "case": "Fuses poorly: irony undermines an elevated brand.",
+      "risk": "Joke wears off instantly.",
+      "kept": "A linear, can't-get-lost booking step: pick a shop, go."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "Dark, premium barbershop site executed impeccably.",
+    "palette": ["#0D0D0D", "#F5F3EF", "#B89A6A"],
+    "materials": ["full-bleed shop photography", "refined serif", "subtle motion"],
+    "viewport": "Full-screen photo hero with wordmark, tagline and a Book button.",
+    "risk": "Indistinguishable from every other premium barbershop by design."
+  },
+  "steer": true
+}
