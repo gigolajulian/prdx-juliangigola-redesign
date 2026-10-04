@@ -184,3 +184,20 @@ document.addEventListener("click", (e) => {
   booker.showModal();
   document.body.style.overflow = "hidden";
 });
+
+/* Scroll reveals: copy, lists and plates rise into the page as it's read. Photographs keep their
+   own ink-to-colour develop. Nothing is tagged under reduced motion or without JS. */
+if (!reduced && "IntersectionObserver" in window) {
+  const items = new Set();
+  const mark = (el, i) => {
+    if (el.closest(".cover, .opener") || el.matches(".print, .sticker") || items.has(el)) return;
+    el.classList.add("rv"); el.style.setProperty("--i", Math.min(i, 6)); items.add(el);
+  };
+  document.querySelectorAll(".feature__head, .statement, .article__body, .pathway, .index, .founders, .vision, .horizon, .plates, .shop__head, .shop__facts, .contact__aside, .endpaper__card, .close__grid")
+    .forEach((g) => [...g.children].forEach((c, i) => mark(c, i)));
+  document.querySelectorAll(".contact .form").forEach((el) => mark(el, 0));
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+  items.forEach((el) => io.observe(el));
+}

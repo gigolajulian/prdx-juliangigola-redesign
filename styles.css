@@ -818,3 +818,7 @@ p { text-wrap: pretty; }
 .booker__foot { display: flex; justify-content: space-between; gap: 12px; padding: 10px var(--gutter); border-top: 1px solid var(--ink); font-family: var(--mono); font-size: 0.6875rem; color: var(--mute); }
 .booker__foot a { color: var(--ink); }
 @media (prefers-reduced-motion: reduce) { .booker, .booker::backdrop { transition: none; } }
+
+/* ---------- Scroll reveals (classes added by main.js only when motion is welcome) ---------- */
+.rv { opacity: 0; transform: translateY(14px); transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); transition-delay: calc(var(--i, 0) * 70ms); }
+.rv.is-in { opacity: 1; transform: none; }

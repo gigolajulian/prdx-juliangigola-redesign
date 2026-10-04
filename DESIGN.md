@@ -267,6 +267,9 @@ Every link to getsquire.com/booking opens a native `<dialog>` instead of a new t
 ### Endpaper and Endband
 The paisley bandana on ink as a full section ground (900px tile) carrying a laid paper card and a sticker, and as a 72 to 120px band (700px tile) closing every page above the ink colophon.
 
+### Scroll Reveals
+Below the cover or opener, copy, lists and plates rise 14px and fade in as they enter the page: 700ms ease-out, staggered 70ms per sibling and capped at the sixth. main.js tags the children of feature heads, statements, article bodies, the pathway, shop index, founders, vision, horizon, shop plates, location heads and facts, the contact aside, the endpaper card and the close (plus the contact form). An IntersectionObserver (threshold 0.12, bottom margin -8%) adds `is-in` once. Prints and stickers are never tagged: photographs keep their own ink-to-colour develop, and stickers keep their tilt. Nothing is tagged under reduced motion or without JS.
+
 ## Do's and Don'ts
 
 ### Do:
